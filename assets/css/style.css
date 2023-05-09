@@ -23,6 +23,8 @@ main {
 
 .calculator .display {
 
+    display:flex;
+    align-items: center;
     width: 95%;
     height: 15%;
     border-left: 10px #102818 solid;
@@ -37,7 +39,7 @@ main {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    align-content: space-around;
+    align-content: flex-start;
     justify-content: space-around;
     border: 2px #1028180e solid;
     width: 80%;
@@ -47,12 +49,12 @@ main {
 
 
 .button {
-
+    margin-bottom: 2%;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    font-family: "Verdana";
     height: 50px;
     background-color: #70B070;
     border: 2px #102818 solid;
