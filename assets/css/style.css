@@ -1,5 +1,85 @@
-body
+body {
+    background-color: #70B070;
+    margin: 2%;
+
+}
+
+
+main {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 90vh;
+}
+
+.calculator .display {
+
+    width: 95%;
+    height: 15%;
+    border-left: 10px #102818 solid;
+    border-right: 10px #102818 solid;
+    border-bottom: 2px #102818 solid;
+    border-top: 2px #102818 solid;
+
+}
+
+.calculator .list-button {
+
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+    justify-content: space-around;
+    border: 2px #1028180e solid;
+    width: 80%;
+    height: 70%;
+
+}
+
+
+.button {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: 50px;
+    background-color: #70B070;
+    border: 2px #102818 solid;
+
+}
+
+.shadow {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 10%;
+    background-color: #508050;
+   border-top: 3px solid #385031;
+}
+
+.button1
 {
-background-color: #70B070;
+    width:18%
+}
+
+.button2{
+
+    width:38%
+}
+
+.button p
+{
+
 
 }
