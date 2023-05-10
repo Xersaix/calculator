@@ -111,7 +111,7 @@ main {
     color: #508050;
 }
 
-.number .in-number {
+.number #in-number {
     color:black;
 
     position:absolute;
