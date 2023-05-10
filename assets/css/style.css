@@ -28,8 +28,9 @@ main {
 
 .calculator .display {
 
-
+    position: relative;
     display: flex;
+    flex-direction: row;
     justify-content: end;
     align-items: center;
     width: 95%;
@@ -45,16 +46,17 @@ main {
 
     position: relative;
     display: flex;
+    align-items: center;
     flex-wrap: nowrap;
     flex-direction: row-reverse;
     height: 100%;
-    width: 70%;
+
 }
 
 .list-number .number {
     margin: 0%;
     font-family: displayFont;
-    font-size: 3em;
+    font-size: 3rem;
 }
 
 .calculator .list-button {
@@ -108,16 +110,80 @@ main {
 .number {
     position: relative;
     display: block;
-    color: #508050;
+    color: #5080506f;
+}
+
+.calc {
+
+    color: #5080506f;
+    margin: 0%;
+    font-family: displayFont;
+    font-size: 3rem;
+    position: absolute;
+    top: 22%;
+    left: 2%;
+    z-index: 2;
+    width: inherit;
+    height: inherit;
 }
 
 .number #in-number {
-    color:black;
+    color: #385030;
 
-    position:absolute;
+    position: absolute;
     top: 0%;
     right: 0%;
     z-index: 2;
     width: inherit;
     height: inherit;
+}
+
+.calc #in-calc {
+    color: #385030;
+
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    z-index: 2;
+    width: inherit;
+    height: inherit;
+
+}
+
+@media only screen and (min-width: 320px) {
+    .button {
+        height: 100px;
+    }
+    .list-number
+    {
+        font-size: 2rem;
+    }
+
+}
+
+@media only screen and (min-width: 481px){
+
+    
+
+    .list-number .number{
+
+        font-size: 4rem;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 768px) {
+
+    .calculator .list-button {
+        width: 80%;
+    }
+    .list-number .number
+    {
+        font-size: 7rem;
+    }
+    .calculator .display{
+        justify-content: center;
+    }
 }
